@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\emsgard.johan\\Programering1\\Vinterprojekt\\Vinterprojekt\\Vinterprojekt.csproj": {}
+    "C:\\Users\\emsgard.johan\\Programering1\\Vinterprojekt\\Vinterprojekt\\Vinterprojekt.csproj": {}
   },
   "projects": {
-    "c:\\Users\\emsgard.johan\\Programering1\\Vinterprojekt\\Vinterprojekt\\Vinterprojekt.csproj": {
+    "C:\\Users\\emsgard.johan\\Programering1\\Vinterprojekt\\Vinterprojekt\\Vinterprojekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\emsgard.johan\\Programering1\\Vinterprojekt\\Vinterprojekt\\Vinterprojekt.csproj",
+        "projectUniqueName": "C:\\Users\\emsgard.johan\\Programering1\\Vinterprojekt\\Vinterprojekt\\Vinterprojekt.csproj",
         "projectName": "Vinterprojekt",
-        "projectPath": "c:\\Users\\emsgard.johan\\Programering1\\Vinterprojekt\\Vinterprojekt\\Vinterprojekt.csproj",
+        "projectPath": "C:\\Users\\emsgard.johan\\Programering1\\Vinterprojekt\\Vinterprojekt\\Vinterprojekt.csproj",
         "packagesPath": "C:\\Users\\emsgard.johan\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\emsgard.johan\\Programering1\\Vinterprojekt\\Vinterprojekt\\obj\\",
+        "outputPath": "C:\\Users\\emsgard.johan\\Programering1\\Vinterprojekt\\Vinterprojekt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emsgard.johan\\AppData\\Roaming\\NuGet\\NuGet.Config"
