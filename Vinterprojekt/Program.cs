@@ -25,6 +25,19 @@ string rival = Console.ReadLine();
 Console.WriteLine($"Ahh I remember now his name was {rival}");
 Console.ReadLine();
 
+string starter = "";
+
+while(starter != "Chimchar" && starter != "Turtwig" && starter != "Piplup")
+{
+    Console.WriteLine("Pick your Starter Pokemon");
+    Console.WriteLine("Chimchar");
+    Console.WriteLine("Turtwig");
+    Console.WriteLine("Piplup");
+    starter = Console.ReadLine();
+}
+
+
+
 
 
 Console.ReadLine();
