@@ -6,7 +6,7 @@ Console.ReadLine();
 
 string gender = "";
 
-while ( gender != "Boy" && gender != "Girl" )
+while (gender != "Boy" && gender != "Girl")
 {
     Console.WriteLine("Are you a boy or a girl?");
     gender = Console.ReadLine();
@@ -22,12 +22,22 @@ Console.WriteLine("This is my nephew. You guys have known eachother since you we
 Console.WriteLine("Umm what was his name again?");
 string rival = Console.ReadLine();
 
+string[] rivals = { "Casey", "Ethan" };
+Random generator = new Random();
+
+if (rival == "")
+{
+    int i = generator.Next(rivals.Length);
+    rival = rivals[i];
+}
+
+
 Console.WriteLine($"Ahh I remember now his name was {rival}");
 Console.ReadLine();
 
 string starter = "";
 
-while(starter != "Chimchar" && starter != "Turtwig" && starter != "Piplup")
+while (starter != "Chimchar" && starter != "Turtwig" && starter != "Piplup")
 {
     Console.WriteLine("Pick your Starter Pokemon");
     Console.WriteLine("Chimchar");
@@ -36,9 +46,9 @@ while(starter != "Chimchar" && starter != "Turtwig" && starter != "Piplup")
     starter = Console.ReadLine();
 }
 
+if (starter == "Chimchar")
 
 
 
-
-Console.ReadLine();
+    Console.ReadLine();
 
