@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 Console.WriteLine("Hello and Welcome the world of Pokemon, a place where both humans and mythical creatures can come togethor. This is the Tunod region. One of the many places in the pokemon world.");
 Console.ReadLine();
 
