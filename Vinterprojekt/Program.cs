@@ -3,15 +3,6 @@ using System.Collections.Generic;
 using Raylib_cs;
 
 
-while (!Raylib.WindowShouldClose())
-{
-    Raylib.BeginDrawing();
-    Raylib.ClearBackground(Color.SKYBLUE);
-    Raylib.EndDrawing();
-}
-
-
-
 Console.WriteLine("Hello and Welcome the world of Pokemon, a place where both humans and mythical creatures can come togethor. This is the Tunod region. One of the many places in the pokemon world.");
 Console.ReadLine();
 
@@ -58,7 +49,14 @@ while (starter != "Chimchar" && starter != "Turtwig" && starter != "Piplup")
     starter = Console.ReadLine();
 }
 
-if (starter == "Chimchar")
+string[] attack = {"Scratch", "Leer", "Ember"};
+
+for (int j = 0; j < attack.Length; j++)
+{
+    Console.WriteLine($"{starter} used");
+
+}
+
 
 
 
