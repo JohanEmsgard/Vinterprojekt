@@ -49,16 +49,7 @@ while (starter != "Chimchar" && starter != "Turtwig" && starter != "Piplup")
     starter = Console.ReadLine();
 }
 
-string[] attack = {"Scratch", "Leer", "Ember"};
+string[] attack = { "Scratch", "Leer", "Ember" };
 
-for (int j = 0; j < attack.Length; j++)
-{
-    Console.WriteLine($"{starter} used");
-
-}
-
-
-
-
-    Console.ReadLine();
+Console.ReadLine();
 
