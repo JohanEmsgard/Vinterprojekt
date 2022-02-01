@@ -49,7 +49,24 @@ while (starter != "Chimchar" && starter != "Turtwig" && starter != "Piplup")
     starter = Console.ReadLine();
 }
 
-string[] attack = { "Scratch", "Leer", "Ember" };
+string[] attackC = { "Scratch", "Leer", "Ember" };
+// Random generator = new Random();
+string[] attackP = {"Pound", "Growl", "Bubble"};
+
+string[]attackT = {"Tackle", "Growl", "Obsorb"};
+
+Console.ReadLine();
+
+if (starter == "Turtwig")
+{
+    int t = generator.Next(attackT.Length);
+    Console.WriteLine($"Turtwig used {attackT[0]}");
+
+    int c = generator.Next(attackC.Length);
+    Console.WriteLine($"Enemy Chimchar used {attackC[0]}");
+    // attack = Console.ReadLine();
+
+}
 
 Console.ReadLine();
 
