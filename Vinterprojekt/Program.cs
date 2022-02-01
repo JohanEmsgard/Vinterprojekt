@@ -49,6 +49,10 @@ while (starter != "Chimchar" && starter != "Turtwig" && starter != "Piplup")
     starter = Console.ReadLine();
 }
 
+int hpC = 100;
+int hpT = 100;
+int hpP = 100;
+
 string[] attackC = { "Scratch", "Leer", "Ember" };
 // Random generator = new Random();
 string[] attackP = {"Pound", "Growl", "Bubble"};
@@ -56,6 +60,9 @@ string[] attackP = {"Pound", "Growl", "Bubble"};
 string[]attackT = {"Tackle", "Growl", "Obsorb"};
 
 Console.ReadLine();
+
+while(hpC > 0 && hpT > 0)
+{
 
 if (starter == "Turtwig")
 {
@@ -67,6 +74,9 @@ if (starter == "Turtwig")
     // attack = Console.ReadLine();
 
 }
+
+}
+
 
 Console.ReadLine();
 
