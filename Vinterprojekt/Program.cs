@@ -61,7 +61,7 @@ string[]attackT = {"Tackle", "Growl", "Obsorb"};
 
 Console.ReadLine();
 
-while(hpC > 0 && hpT > 0)
+while(hpC > 0 && hpT > 0 && hpP > 0)
 {
 
 if (starter == "Turtwig")
@@ -71,7 +71,7 @@ if (starter == "Turtwig")
 
     int c = generator.Next(attackC.Length);
     Console.WriteLine($"Enemy Chimchar used {attackC[0]}");
-    // attack = Console.ReadLine();
+
 
 }
 
