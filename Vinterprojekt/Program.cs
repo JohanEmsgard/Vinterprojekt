@@ -15,8 +15,11 @@ while (gender != "Boy" && gender != "Girl")
     gender = Console.ReadLine();
 }
 
+
+
 Console.WriteLine("Let's Begin with your name, what is it?");
-string name = Console.ReadLine();
+string name = Console.ReadLine();    
+
 
 Console.WriteLine($"Ok so your name is {name}");
 Console.ReadLine();
@@ -71,8 +74,22 @@ if (starter == "Turtwig")
 
     int c = generator.Next(attackC.Length);
     Console.WriteLine($"Enemy Chimchar used {attackC[0]}");
+}
 
+else if (starter == "Chimchar")
+{
+    int c = generator.Next(attackC.Length);
+    Console.WriteLine($"Chimchar used {attackC[0]}");
 
+    int p = generator.Next(attackP.Length);
+    Console.WriteLine($"Enemy Piplup used {attackC[0]}");
+
+}
+
+else if (starter == "Piplup")
+{
+    int p = generator.Next(attackP.Length);
+    Console.WriteLine($"Piplup used {attackC[0]}");
 }
 
 }
