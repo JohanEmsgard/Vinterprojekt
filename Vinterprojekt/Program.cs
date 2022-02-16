@@ -21,7 +21,7 @@ Console.WriteLine("Let's Begin with your name, what is it?");
 string name = Console.ReadLine();    
 
 
-Console.WriteLine($"Ok so your name is {name}");
+Console.WriteLine($"Ok so your name is {name}"); 
 Console.ReadLine();
 
 Console.WriteLine("This is my nephew. You guys have known eachother since you were both babies");
@@ -71,18 +71,22 @@ if (starter == "Turtwig")
 {
     int t = generator.Next(attackT.Length);
     Console.WriteLine($"Turtwig used {attackT[0]}");
+    hpC -= 10;
 
     int c = generator.Next(attackC.Length);
     Console.WriteLine($"Enemy Chimchar used {attackC[0]}");
+    hpT -= 10;
 }
 
 else if (starter == "Chimchar")
 {
     int c = generator.Next(attackC.Length);
     Console.WriteLine($"Chimchar used {attackC[0]}");
+    hpP -= 10;
 
     int p = generator.Next(attackP.Length);
     Console.WriteLine($"Enemy Piplup used {attackC[0]}");
+    hpC -= 10;
 
 }
 
