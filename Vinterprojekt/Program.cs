@@ -21,6 +21,7 @@ Console.WriteLine("Let's Begin with your name, what is it?");
 string name = Console.ReadLine();    
 
 
+
 Console.WriteLine($"Ok so your name is {name}"); 
 Console.ReadLine();
 
@@ -72,10 +73,14 @@ if (starter == "Turtwig")
     int t = generator.Next(attackT.Length);
     Console.WriteLine($"Turtwig used {attackT[0]}");
     hpC -= 10;
+    Console.ReadLine();
+    
 
     int c = generator.Next(attackC.Length);
     Console.WriteLine($"Enemy Chimchar used {attackC[0]}");
     hpT -= 10;
+    Console.ReadLine();
+    
 }
 
 else if (starter == "Chimchar")
@@ -83,10 +88,14 @@ else if (starter == "Chimchar")
     int c = generator.Next(attackC.Length);
     Console.WriteLine($"Chimchar used {attackC[0]}");
     hpP -= 10;
+    Console.ReadLine();
+    
 
     int p = generator.Next(attackP.Length);
     Console.WriteLine($"Enemy Piplup used {attackC[0]}");
     hpC -= 10;
+    Console.ReadLine();
+    
 
 }
 
@@ -94,8 +103,40 @@ else if (starter == "Piplup")
 {
     int p = generator.Next(attackP.Length);
     Console.WriteLine($"Piplup used {attackC[0]}");
+    hpT -= 10;
+    Console.ReadLine();
+    
+    int t = generator.Next(attackT.Length);
+    Console.WriteLine($"Enemy Turtwig used {attackT[0]}");
+    hpP -=10;
+    Console.ReadLine(); 
+    
 }
 
+}
+
+if (hpC >= 0)
+{
+    Console.WriteLine("Chimchar fainted");
+    Console.ReadLine();
+    Console.WriteLine("Piplup Wins");
+    Console.ReadLine(); 
+}
+
+else if (hpP >= 0)
+{
+    Console.WriteLine("Piplup fainted");
+    Console.ReadLine();
+    Console.WriteLine("Turtwig Wins");
+    Console.ReadLine();
+}
+
+else if (hpT >= 0)
+{
+    Console.WriteLine("Turtwig fainted");
+    Console.ReadLine();
+    Console.WriteLine("Chimchar Wins");
+    Console.ReadLine();
 }
 
 
