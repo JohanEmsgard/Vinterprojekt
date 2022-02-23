@@ -9,7 +9,7 @@ Console.ReadLine();
 
 string gender = "";
 
-while (gender != "Boy" && gender != "Girl")
+while (gender != "Boy" && gender != "Girl" && gender != "boy" && gender != "girl")
 {
     Console.WriteLine("Are you a boy or a girl?");
     gender = Console.ReadLine();
@@ -20,10 +20,19 @@ while (gender != "Boy" && gender != "Girl")
 Console.WriteLine("Let's Begin with your name, what is it?");
 string name = Console.ReadLine();    
 
+string[] names = {"Jason", "Chase"};
+Random generator2 = new Random();
 
+
+if (name == "")
+{
+    int i = generator2.Next(names.Length);
+    name = names[i];
+}
 
 Console.WriteLine($"Ok so your name is {name}"); 
 Console.ReadLine();
+
 
 Console.WriteLine("This is my nephew. You guys have known eachother since you were both babies");
 Console.WriteLine("Umm what was his name again?");
